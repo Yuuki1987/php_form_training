@@ -1,0 +1,14 @@
+a {
+    font-size: 13px;
+    color: #1af;
+    text-decoration: none;
+}
+
+
+input{
+  border-radius: 5px;
+}
+
+textarea{
+  border-radius: 5px;
+}
