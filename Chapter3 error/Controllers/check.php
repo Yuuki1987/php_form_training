@@ -15,6 +15,8 @@ header('location: form.php');
 exit;
 }
 
+
+
 //画面表示
 include_once('../Views/check.php')
 ?>

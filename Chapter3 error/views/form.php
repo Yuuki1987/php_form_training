@@ -11,6 +11,7 @@ require('../Views/layouts/app.php');
             <h1 class="text-center" colspan="2">問い合わせフォーム</h1>
 
             <?php if (!$_SESSION == "") : ?>
+                <div class="text-danger">
                 <?php if (empty($name)) : ?>
                     <h3 class="text-center" colspan="2">名前を入力してください</h3>
                 <?php endif; ?>
@@ -19,6 +20,7 @@ require('../Views/layouts/app.php');
                 <?php endif; ?>
                 <?php if (empty($message)) : ?>
                     <h3 class="text-center" colspan="2">問い合わせ内容を入力してください</h3>
+                </div>
                 <?php endif; ?>
             <?php endif ?>
             <tr>
