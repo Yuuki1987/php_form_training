@@ -9,7 +9,8 @@ require('../Views/layouts/app.php');
     <form action="check.php" method="POST">
         <table class="table table-hover">
             <h1 class="text-center" colspan="2">問い合わせフォーム</h1>
-            <?php if (!$_SESSION === NULL) : ?>
+
+            <?php if (!$_SESSION == "") : ?>
                 <?php if (empty($name)) : ?>
                     <h3 class="text-center" colspan="2">名前を入力してください</h3>
                 <?php endif; ?>
@@ -44,6 +45,8 @@ require('../Views/layouts/app.php');
         </table>
     </form>
 </div>
+
+
 </body>
 
 </html>
