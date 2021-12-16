@@ -12,13 +12,13 @@ $_SESSION['message'] =$message;
 
 if(empty($name) or empty($email) or empty($message) ){
     if (empty($_SESSION['name'])) {
-        $_SESSION['name'] == 0;
+        $_SESSION['name'] = 0;
     }
     if (empty($_SESSION['email'])) {
-        $_SESSION['email'] == 0;
+        $_SESSION['email'] = 0;
     }
     if (empty($_SESSION['message'])) {
-        $_SESSION['message'] == 0;
+        $_SESSION['message'] = 0;
     }   
 header('location: form.php');
 exit;

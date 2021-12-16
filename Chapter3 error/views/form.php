@@ -9,7 +9,6 @@ require('../Views/layouts/app.php');
     <form action="check.php" method="POST">
         <table class="table table-hover">
             <h1 class="text-center" colspan="2">問い合わせフォーム</h1>
-
             <div class="text-danger">
                 <?php if ($name == 0) : ?>
                     <h3 class="text-center" colspan="2">名前を入力してください</h3>
