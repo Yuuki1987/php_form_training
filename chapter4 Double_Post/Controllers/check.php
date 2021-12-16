@@ -10,7 +10,16 @@ $_SESSION['email'] =$email;
 $message = $_POST["message"];
 $_SESSION['message'] =$message;
 
-if(empty($name) or empty($email) or empty($message) ){    
+if(empty($name) or empty($email) or empty($message) ){
+    if (empty($_SESSION['name'])) {
+        $_SESSION['name'] == 0;
+    }
+    if (empty($_SESSION['email'])) {
+        $_SESSION['email'] == 0;
+    }
+    if (empty($_SESSION['message'])) {
+        $_SESSION['message'] == 0;
+    }   
 header('location: form.php');
 exit;
 }

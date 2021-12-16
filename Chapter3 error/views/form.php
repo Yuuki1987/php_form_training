@@ -10,19 +10,17 @@ require('../Views/layouts/app.php');
         <table class="table table-hover">
             <h1 class="text-center" colspan="2">問い合わせフォーム</h1>
 
-            <?php if (!$_SESSION == "") : ?>
-                <div class="text-danger">
-                <?php if (empty($name)) : ?>
+            <div class="text-danger">
+                <?php if ($name == 0) : ?>
                     <h3 class="text-center" colspan="2">名前を入力してください</h3>
                 <?php endif; ?>
-                <?php if (empty($email)) :  ?>
+                <?php if ($email == 0) :  ?>
                     <h3 class="text-center" colspan="2">メールアドレスを入力してください</h3>
                 <?php endif; ?>
-                <?php if (empty($message)) : ?>
+                <?php if ($message == 0) : ?>
                     <h3 class="text-center" colspan="2">問い合わせ内容を入力してください</h3>
-                </div>
                 <?php endif; ?>
-            <?php endif ?>
+            </div>
             <tr>
                 <th>名前 </th>
                 <td><input type="text" name="name" size="30" value="<?php if (!empty($name)) {
